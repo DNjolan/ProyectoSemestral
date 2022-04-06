@@ -1,0 +1,33 @@
+--Para clonar un repositorio--
+git clone <El HTTPS del repositorio>
+
+--Para iniciar en el repositorio--
+git init
+
+--Para ver el estado del repositorio-- 
+git status
+
+--Para agregar los archivos que modificaron o nuevos--
+git add .
+--Si solo quieren agregar un archivo nomas y no todos--
+git add <Nombre del archivo>
+
+--Para hacer una foto de lo que va a tener que guardar el repositorio--
+git commit -m "Titulo de la actualizacion. ejemplo: <update_1>"
+
+--Para hacer que este repositirio sea el main--
+git branch -M origin main
+
+--Para crear un apartado del repositio main, 
+  por ejemplo en modificacion y no ocupar el main--
+git branch <nombre>
+
+--Para consultar todos los repositorio que creaste--
+git branch
+
+--Para ocupar ese branch del repositorio--
+git checkout <nombre del repositorio>
+
+--Cuando hagan el commit y quieran guardar el repositorio en la nube
+  tienen que ocupar este comando--
+git push

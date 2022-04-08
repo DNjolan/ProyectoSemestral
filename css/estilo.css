@@ -31,7 +31,7 @@ footer{
 }
 
 .slide{
-    margin-top: 10px;
+    padding-top: 120px;
     
 }
 
@@ -54,7 +54,7 @@ footer{
 
 #burbuja{
     background-color: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(194, 180, 180) 0%, rgb(219, 18, 18) 57%);
+    background: linear-gradient(0deg, rgb(194, 180, 180) 0%, rgb(202, 79, 79) 57%);
     background-repeat: repeat-x;
     background-size: 75%;
     margin-top: -20px;

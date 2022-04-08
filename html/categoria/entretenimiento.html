@@ -13,7 +13,7 @@
     <body>
 
         <!--Inicio del navbar-->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-danger menuFlotante">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger menuFlotante">
             <div class="contenedorLogo container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="https://cdn-icons-png.flaticon.com/512/21/21601.png" alt="">
@@ -55,10 +55,10 @@
                         <li class="nav-item"><a class="nav-link" href="../registrate.html">Registrate</a></li>
                         <li class="nav-item"><a class="nav-link" href="../inicioDeSesion.html">Iniciar sesion</a></li>
 
-                        <form class="d-flex">
-                            <input class="btn btn-outline-dark form-control me-2 rounded-pill bg-dark text-white" type="text" placeholder="Buscador" aria-label="Buscador">
-                            <button class="btn btn-outline-dark bg-dark text-white border-danger rounded-pill" type="button">Go</button>
-                        </form>
+                        <!--Inicio buscador y boton-->
+                        <input id="buscadorid" class="buscadorid btn btn-outline-dark form-control me-2 rounded-pill bg-dark text-white" placeholder="Buscador" aria-label="Buscador">
+                        <button id="botonid" class="botonid btn btn-outline-dark bg-dark text-white border-danger rounded-pill" >Go</button>
+                        <!--Fin buscador y boton-->
                     </ul>
                 </div>
                 <!--Fin link que te redireccionan-->
@@ -93,18 +93,18 @@
             <div class="container">
                 <nav class="row">
                     <!--Logo-->
-                    <a href="#" class="decoracionTexto contenedorLogo col-3 text-reset text-uppercase d-flex align-items-center">
+                    <a href="#" class="col-sm-3 col-12 decoracionTexto contenedorLogo text-reset text-uppercase d-flex align-items-center">
                         <img class="mr-2" src="https://cdn-icons-png.flaticon.com/512/21/21601.png" alt="Logo Caos news">
                     </a>
                     <!--Menu contactos-->
-                    <ul class="col-6 list-unstyled align-text-center">
+                    <ul class="col-sm-6 col-12 list-unstyled align-text-center">
                         <li class="font-weight-bold text-uppercase" id="piePagina">Contactanos</li>
                         <li>Número celular: +56 9 1234 5678</li>
                         <li>Correo: contactanos@duocuc.cl</li>
                         <li><a href="../contacto.html"><button class="btn btn-outline-dark bg-dark text-white rounded-pill" type="button">Formulario</button></a></li>
                     </ul>
                     <!--Menu redes sociales-->
-                    <ul class="col-2 list-unstyled logoSocial">
+                    <ul class="col-sm-2 col-7 list-unstyled logoSocial">
                         <li class="font-weight-bold text-uppercase">Redes sociales</li>
                         <li class="d-flex justify-content-between">
                             <!--Logo facebook-->
@@ -121,7 +121,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="col-1"></div>
+                    <div class="col-sm-1 col-5"></div>
                 </nav>
             </div>
             <hr>
@@ -129,5 +129,67 @@
                 &#169; Javier, Matias, Daniel 2022. Todos los derechos de autor reservados.
             </div>
         </footer>
+
+        <!--Inicio script buscador-->
+        <script>
+            botonid.onclick = function(){
+                var buscar = document.getElementById("buscadorid").value;
+                if(buscar == 'daniel' 
+                    || buscar == 'Daniel' 
+                    || buscar == 'periodista daniel' 
+                    || buscar == 'Periodista daniel' 
+                    || buscar == 'Periodista Daniel'
+                    || buscar == 'periodista Daniel'){
+                    window.location.href = "../periodistas/daniel.html";
+                    console.log(window.location.href);
+                }else if(buscar == 'matias' 
+                    || buscar == 'Matias' 
+                    || buscar == 'periodista matias' 
+                    || buscar == 'Periodista matias' 
+                    || buscar == 'Periodista Matias'
+                    || buscar == 'periodista Matias'){
+                    window.location.href = "../periodistas/matias.html";
+                    console.log(window.location.href);
+                }else if(buscar == 'javier' 
+                    || buscar == 'Javier' 
+                    || buscar == 'periodista javier' 
+                    || buscar == 'Periodista javier' 
+                    || buscar == 'Periodista Javier'
+                    || buscar == 'periodista Javier'){
+                    window.location.href = "../periodistas/javier.html";
+                    console.log(window.location.href);
+                }else if(buscar == 'deporte' 
+                    || buscar == 'Deporte' 
+                    || buscar == 'página de deporte' 
+                    || buscar == 'Pagina de deporte' 
+                    || buscar == 'pagina de deporte' 
+                    || buscar == 'Página de Deporte'
+                    || buscar == 'página de Deporte'){
+                    window.location.href = "deporte.html";
+                    console.log(window.location.href);
+                }else if(buscar == 'entretenimiento' 
+                    || buscar == 'Entretenimiento' 
+                    || buscar == 'página de entretenimiento' 
+                    || buscar == 'Pagina de entretenimiento' 
+                    || buscar == 'pagina de entretenimiento' 
+                    || buscar == 'Página de Entretenimiento'
+                    || buscar == 'página de Entretenimiento'){
+                    window.location.href = "entretenimiento.html";
+                    console.log(window.location.href);
+                }else if(buscar == 'política' 
+                    || buscar == 'Política' 
+                    || buscar == 'Politica' 
+                    || buscar == 'politica' 
+                    || buscar == 'página de política' 
+                    || buscar == 'Pagina de política' 
+                    || buscar == 'pagina de política' 
+                    || buscar == 'Página de Política'
+                    || buscar == 'página de Política'){
+                    window.location.href = "politica.html";
+                    console.log(window.location.href);
+                }
+            }
+        </script>
+        <!--Fin script buscador-->
     </body>
 </html>

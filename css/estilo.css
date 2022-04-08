@@ -20,3 +20,12 @@ footer{
 .contenedorInfo{
     padding-top: 130px;
 }
+
+#buscadorid{
+    height: 45px;
+    width: 200px;
+}
+
+#botonid{
+    height: 45px;
+}

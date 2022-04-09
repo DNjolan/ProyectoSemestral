@@ -9,7 +9,7 @@
 footer{
     position: relative;
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .menuFlotante{
@@ -36,8 +36,12 @@ footer{
 .infoCartasH{
     margin: 0px auto;
 }
-/*codigos del mati*/
 
+#footerPeriodista{
+    position: fixed;
+    bottom: 0;
+}
+/*codigos del mati*/
 .slide img{
     height: 65vh;
 }

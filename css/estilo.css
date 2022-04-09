@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(0deg, rgb(194, 180, 180) 0%, rgb(202, 79, 79) 57%);
+}
+
 .contenedorLogo img{
     max-width: 100px;
 }
@@ -20,6 +24,15 @@ footer{
 .contenedorInfo{
     padding-top: 130px;
 }
+.contenedorInfoPeriodista{
+    padding-top: 130px;
+}
+.contenedorInfoPeriodista ul{
+    float:right;
+}
+.contenedorInfoPeriodista img{
+    max-width: 500px;
+}
 
 #buscadorid{
     height: 45px;
@@ -41,6 +54,11 @@ footer{
     position: fixed;
     bottom: 0;
 }
+
+#formulario{
+    padding-top: 200px;
+}
+
 /*codigos del mati*/
 .slide img{
     height: 65vh;

@@ -30,7 +30,12 @@ footer{
     height: 45px;
 }
 
-
+.infoCartasP{
+    align-content: center;
+}
+.infoCartasH{
+    margin: 0px auto;
+}
 /*codigos del mati*/
 
 .slide img{
@@ -58,6 +63,6 @@ footer{
     margin-top: -20px;
 }
 
-.INNERBLOCk{
+/*.INNERBLOCk{
     display: inline-block;
-}
+}*/

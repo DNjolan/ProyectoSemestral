@@ -33,13 +33,7 @@ footer{
 
 /*codigos del mati*/
 
-.slide{
-    padding-top: 120px;
-    
-}
-
 .slide img{
-
     height: 65vh;
 }
 
@@ -54,6 +48,7 @@ footer{
 .card-border:hover{
     transform: scale(1.05);
 }
+
 
 #burbuja{
     background-color: rgb(255, 255, 255);

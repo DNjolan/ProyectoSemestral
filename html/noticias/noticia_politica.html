@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../css/estilo.css">
-    </head>
-    <body>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    
         <!--Inicio del navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger menuFlotante">
             <div class="contenedorLogo container-fluid">
@@ -34,26 +33,26 @@
                 <!--Inicio link que te redireccionan-->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categoria</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item nav-link" href="categoria/deporte.html">Deporte</a></li>
-                                <li><a class="dropdown-item nav-link" href="categoria/entretenimiento.html">Entretenimiento</a></li>
-                                <li><a class="dropdown-item nav-link" href="categoria/politica.html">política</a></li>
+                                <li><a class="dropdown-item nav-link" href="../categoria/deporte.html">Deporte</a></li>
+                                <li><a class="dropdown-item nav-link" href="../categoria/entretenimiento.html">Entretenimiento</a></li>
+                                <li><a class="dropdown-item nav-link" href="../categoria/politica.html">política</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Periodistas</a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item nav-link" href="periodistas/matias.html">Matías</a></li>
-                                <li><a class="dropdown-item nav-link" href="periodistas/javier.html">Javier</a></li>
-                                <li><a class="dropdown-item nav-link" href="periodistas/daniel.html">Daniel</a></li>
+                                <li><a class="dropdown-item nav-link" href="../periodistas/matias.html">Matías</a></li>
+                                <li><a class="dropdown-item nav-link" href="../periodistas/javier.html">Javier</a></li>
+                                <li><a class="dropdown-item nav-link" href="../periodistas/daniel.html">Daniel</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#piePagina">Contactos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="registrate.html">Registrate</a></li>
-                        <li class="nav-item"><a class="nav-link" href="inicioDeSesion.html">Iniciar sesion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../registrate.html">Registrate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../inicioDeSesion.html">Iniciar sesion</a></li>
 
                         <!--Inicio buscador y boton-->
                         <input id="buscadorid" class="buscadorid btn btn-outline-dark form-control me-2 rounded-pill bg-dark text-white" placeholder="Buscador" aria-label="Buscador">
@@ -67,42 +66,61 @@
         </nav>
         <!--Fin del navbar-->
 
-        <!--Inicio formulario-->
-        <form action="../index.html">
-            <div id="formulario" class="container">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" 
-                        class="form-control" 
-                        id="nombre"
-                        minlength="3"
-                        maxlength="30"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Ingresa correo electronico</label>
-                    <input type="email" 
-                        class="form-control" 
-                        id="email" 
-                        placeholder="nombreejemplo.com"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Ingrese comentario</label>
-                    <textarea class="form-control" 
-                        id="exampleFormControlTextarea1" 
-                        rows="3"
-                        minlength="30"
-                        maxlength="200"
-                        required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-        <!--Fin formulario-->
+     <!--inicio notia 1-->
+     
+     <div class="clearfix noticia">
+        <img src="../../img/POLITICA1.JPG" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+      
+        <p>
+            El subsecretario del Interior, Manuel Monsalve, se refirió a la polémica que se vio envuelta la ministra Izkia Siches, luego de que esta asegurara erróneamente que existía un vuelo con migrantes expulsados, durante el gobierno anterior, que regresó a Chile con la totalidad de sus pasajeros.
+        </p>
+      
+        <p>
+            Los dichos de la autoridad fueron en medio de su llegada a La Moneda, descartando que el liderazgo de Siches se viera debilitado tras esta situación que fue criticada transversalmente desde el mundo político.
 
+
+        </p>
+      
+        <p>
+            Monsalve dijo a los medios que "han escuchado las declaraciones de mucha gente. El liderazgo de la ministra se va a seguir ejerciendo, ella está trabajando. Los temas de seguridad son muy importantes para Chile y vamos a seguir trabajando en ello".
+        </p>
+
+        <p>
+            Asimismo recalcó que "somos muy autocríticos y siempre vamos a tratar de hacer las cosas mejor".
+        </p>
+
+        <p>
+            Por su parte, Siches evitó entregar declaraciones a los medios apostados en el palacio de Gobierno.
+        </p>
+
+        <p>
+            Esta misma jornada, parlamentarios de oposición se trasladaron hasta la Contraloría General de La República para solicitar que el organismo se pronuncie por las declaraciones de la autoridad de Gobierno durante la Comisión de Seguridad en la Cámara de Diputadas y Diputados.
+        </p>
+
+        <p>
+            Al respecto, el diputado y jefe de la bancada de Renovación Nacional, Andrés Longton, indicó que "venimos a la Contraloría porque si la ministra hubiera sabido de antemano que sus dichos podían revestir carácter de delito, hubo una omisión de denuncia clara. Ella se enteró de esto el 1 de abril o tal vez antes (...) ella tenía la obligación, como ministra de Estado, de haber denunciado estos hechos".
+        </p>
+
+        <p>
+            "Sino, estamos claramente frente a una ministra que, sabiendo que los hechos eran falsos, mintió y faltó a la verdad deliberadamente en la Comisión de Seguridad y también en algunos diarios regionales. Si es así, hay una falta clara y evidente al principio de probidad, que nosotros queremos que la Contraloría lo determine y se pronuncie respecto a ello", continuó indicando el parlamentario.
+        </p>
+
+        <p>
+            Asimismo dijo que esperan que desde el ente contralor "determine que hubo una omisión de denuncia en este caso, y que se faltó gravemente a la probidad, cuestión que está generando una sensación de inseguridad en la población, y está generando un clima propenso a que estas cosas se sigan repitiendo, porque no es la primera vez y creemos que lamentablemente no va a ser la última".
+        </p>
+
+        <p>
+
+        </p>
+      </div>
+    
+    <!--fin de noticia 1-->
+        <br>
+        <br>
+        <br>
+        
         <!--Footer-->
-        <footer id="footerPeriodista" class="bg-danger py-4">
+        <footer class="bg-danger py-4">
             <div class="container">
                 <nav class="row">
                     <!--Logo-->
@@ -114,7 +132,7 @@
                         <li class="font-weight-bold text-uppercase" id="piePagina">Contactanos</li>
                         <li>Número celular: +56 9 1234 5678</li>
                         <li>Correo: contactanos@duocuc.cl</li>
-                        <li><a href="contacto.html"><button class="btn btn-outline-dark bg-dark text-white rounded-pill" type="button">Formulario</button></a></li>
+                        <li><a href="../contacto.html"><button class="btn btn-outline-dark bg-dark text-white rounded-pill" type="button">Formulario</button></a></li>
                     </ul>
                     <!--Menu redes sociales-->
                     <ul class="col-sm-2 col-7 list-unstyled logoSocial">
@@ -153,7 +171,7 @@
                     || buscar == 'Periodista daniel' 
                     || buscar == 'Periodista Daniel'
                     || buscar == 'periodista Daniel'){
-                    window.location.href = "periodistas/daniel.html";
+                    window.location.href = "../periodistas/daniel.html";
                     console.log(window.location.href);
                 }else if(buscar == 'matias' 
                     || buscar == 'Matias' 
@@ -161,7 +179,7 @@
                     || buscar == 'Periodista matias' 
                     || buscar == 'Periodista Matias'
                     || buscar == 'periodista Matias'){
-                    window.location.href = "periodistas/matias.html";
+                    window.location.href = "../periodistas/matias.html";
                     console.log(window.location.href);
                 }else if(buscar == 'javier' 
                     || buscar == 'Javier' 
@@ -169,7 +187,7 @@
                     || buscar == 'Periodista javier' 
                     || buscar == 'Periodista Javier'
                     || buscar == 'periodista Javier'){
-                    window.location.href = "periodistas/javier.html";
+                    window.location.href = "../periodistas/javier.html";
                     console.log(window.location.href);
                 }else if(buscar == 'deporte' 
                     || buscar == 'Deporte' 
@@ -178,7 +196,7 @@
                     || buscar == 'pagina de deporte' 
                     || buscar == 'Página de Deporte'
                     || buscar == 'página de Deporte'){
-                    window.location.href = "categoria/deporte.html";
+                    window.location.href = "deporte.html";
                     console.log(window.location.href);
                 }else if(buscar == 'entretenimiento' 
                     || buscar == 'Entretenimiento' 
@@ -187,7 +205,7 @@
                     || buscar == 'pagina de entretenimiento' 
                     || buscar == 'Página de Entretenimiento'
                     || buscar == 'página de Entretenimiento'){
-                    window.location.href = "categoria/entretenimiento.html";
+                    window.location.href = "entretenimiento.html";
                     console.log(window.location.href);
                 }else if(buscar == 'política' 
                     || buscar == 'Política' 
@@ -198,11 +216,11 @@
                     || buscar == 'pagina de política' 
                     || buscar == 'Página de Política'
                     || buscar == 'página de Política'){
-                    window.location.href = "categoria/politica.html";
+                    window.location.href = "politica.html";
                     console.log(window.location.href);
                 }
             }
         </script>
         <!--Fin script buscador-->
-    </body>
+</body>
 </html>
